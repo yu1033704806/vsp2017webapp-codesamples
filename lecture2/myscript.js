@@ -2,7 +2,8 @@
 document.writeln("Hello\n");
 
 /* This is a multi-line
-	comment */
+	comment 
+*/
 
 var foo = 0; 
 

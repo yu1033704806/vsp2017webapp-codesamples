@@ -1,3 +1,5 @@
+// This illustrates common array operations
+
 var a = [5, 1, 3, 48, 29, 40, 30, 1, 25, 10 ];
 
 function arraySum(arr) {

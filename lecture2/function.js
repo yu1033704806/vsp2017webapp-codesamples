@@ -1,3 +1,5 @@
+// Illustrates functions, nested functions and scope
+
 function areaOfCircle(radius) {
    var PI = 3.1416;
    
