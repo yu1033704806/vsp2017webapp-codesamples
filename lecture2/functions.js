@@ -17,8 +17,8 @@ var add = function(a, b) {
 };
 
 // This is an example of function currying
-var add10 = add.bind(null, 10);
-console.log( map(l, add10) )
+var add20 = add.bind(null, 20);
+console.log( map(l, add20) )
 
 // Solution to the class activity for the filter function is below;
 var filter = function( array, fn ) {
