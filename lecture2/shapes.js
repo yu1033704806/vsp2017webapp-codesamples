@@ -38,5 +38,5 @@ var addAll = function() {
 };             
 
 var res2 = addAll(p1, p2);
-console.log("Addall result = (" + res2.x + "," + res2.y + "));
+console.log("Addall result = (" + res2.x + "," + res2.y + ")");
  
