@@ -11,5 +11,5 @@ var Person = function(firstName, lastName, gender) {
 var p1 = new Person("John", "Smith", "Male");
 console.log( p1.firstName );
 console.log( p1["lastName"] );
-console.log( p1.name );
+console.log( p1.name() );
 console.log(p1);
