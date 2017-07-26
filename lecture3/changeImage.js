@@ -21,6 +21,8 @@ var changeImages = function(id,  offset) {
 }
 
 window.onload = function() {
-	var offset = 3;
-	changeImages("parent", offset);
+	var offset = 1;
+	setInterval(function() { 
+		changeImages("parent", offset);
+	}, 5000);
 };

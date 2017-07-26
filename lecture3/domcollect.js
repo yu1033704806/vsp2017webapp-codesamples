@@ -69,10 +69,10 @@ window.onload = function() {
 	console.log(s);
 
 	// Find the text "is" starting from node one
-	var found = search(document.getElementById("one"), " is "); 	
+	var found = search(document.getElementById("one"), " vsp "); 	
 	console.log(found);	
 
 	// Concatenate the siblings of text nodes rooted at node one
-	var str = concatenateSiblings("one", true);
+	var str = concatenateSiblings("one", false);
 	console.log(str);
 };
