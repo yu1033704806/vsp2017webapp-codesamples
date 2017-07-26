@@ -41,7 +41,7 @@ var concatenateSubtree = function(node) {
 	return result;
 };
 
-// Solution to class activity on Slide 21
+// Solution to class activity on Slide 30
 // Concatenate all the textnodes in the siblings of text node with the ID= id
 var concatenateSiblings = function(id, includeSubtrees) {
 	var node = document.getElementById(id);
