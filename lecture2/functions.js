@@ -13,7 +13,7 @@ var l = [3, 1, 5, 7, 2];
 console.log( map(l, function(num) { return num + 10; }) );
 
 var add = function(a, b) {
-        return a + b;
+	return a + b;
 };
 
 // This is an example of function currying

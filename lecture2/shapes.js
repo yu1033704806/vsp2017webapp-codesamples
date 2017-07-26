@@ -27,7 +27,7 @@ var addAll = function() {
         for (var i = 0; i < arguments.length; i++) {
                 var point = arguments[i];
                 if (point.x==undefined || point.y==undefined) {
-                        throw { name: TypeError,
+                        throw { etype: TypeError,
                                 message: "Object " + point + " is not of type point",
                         	sum: p
 			};      
@@ -45,7 +45,7 @@ try {
 	var res2 = addAll(p1, p2, p3, "VSP", p4);
 	console.log("Addall result = (" + res2.x + "," + res2.y + ")");
 } catch (e) {
-	console.log("Exception Type: " + e.name);
+	console.log("Exception Type: " + e.etype);
 	console.log("Exception Message: " + e.message);
 	console.log("Partial (" + e.sum.x + " , " + e.sum.y + ")"); 
 } 
