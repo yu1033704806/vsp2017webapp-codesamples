@@ -1,4 +1,4 @@
-var changeImages = function(id,  interval) {
+var changeImages = function(id,  offset) {
 	var div = document.getElementById(id);
 	var imgtags = div.getElementsByTagName("img");
 
@@ -16,10 +16,11 @@ var changeImages = function(id,  interval) {
 		}
 	}
 	
-	setInterval(changeImage, interval);	// Change the image every few seconds
+	for (var k=0; k<offset; k++)
+		changeImage();
 }
 
 window.onload = function() {
-	var interval = 5000;
-	changeImages("parent", interval);
+	var offset = 3;
+	changeImages("parent", offset);
 };
