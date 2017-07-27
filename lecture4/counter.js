@@ -9,10 +9,11 @@ function Adder(val) {
 
 var f = Adder(5);
 console.log( f(3) );
-console.log( f(5) );
 
 var f2 = Adder(100);
 console.log( f2(2) );
+console.log( f(5) );
+
 console.log( f2(3) );
 
 console.log( f(1) );
@@ -114,5 +115,3 @@ for (var i=0; i<10; i++) {
         document.writeln("Counter[ " + i + "] = " + m[i].get());
 }
 	
-};
-
