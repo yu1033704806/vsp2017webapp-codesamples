@@ -114,4 +114,8 @@ for (var i=0; i<10; i++) {
 	console.log(m[i]);
         document.writeln("Counter[ " + i + "] = " + m[i].get());
 }
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> origin/master
