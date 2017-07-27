@@ -12,9 +12,11 @@ var invokeTimes = function(func, noTimes, time) {
 			setTimeout(timeoutHandler, time);
 		}
 	};
-	if (count>0) setTimeout(timeoutHandler, time);
+	if (count==0) setTimeout(timeoutHandler, time);
 };
 
 var setup = function() {
 	invokeTimes( function(i) { alert("hello " + i); }, 10, 1000 );
 }
+
+setup();

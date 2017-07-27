@@ -26,7 +26,7 @@ var addAll = function() {
         var p = new Point(0,0);
         for (var i = 0; i < arguments.length; i++) {
                 var point = arguments[i];
-                if (point.x==undefined || point.y==undefined) {
+		if (point.x==undefined || point.y==undefined) {
                         throw { etype: TypeError,
                                 message: "Object " + point + " is not of type point",
                         	sum: p
