@@ -1,6 +1,7 @@
 // Solution to class activity on Slide 32
 
-var popup = function(name, foo) {
+var popup = function(name) {
+	var foo = alert;
 	return function(e) {
 		console.log(this);
 		foo(name + " : " + e.target);
@@ -12,7 +13,7 @@ window.onload = function() {
 	var setupBtn = document.getElementById("reset");
 	var runBtn = document.getElementById("increment");
 	var doneBtn = document.getElementById("done");
-	setupBtn.addEventListener( "click", popup("setup", alert), false);
-	runBtn.addEventListener( "click", popup("increment", alert), false);
-	doneBtn.addEventListener( "click", popup("done", alert), false);
+	setupBtn.addEventListener( "click", popup("setup"), false);
+	runBtn.addEventListener( "click", popup("increment"), false);
+	doneBtn.addEventListener( "click", popup("done"), false);
 }
