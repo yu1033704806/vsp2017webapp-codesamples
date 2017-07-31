@@ -21,6 +21,7 @@ console.log(Person.prototype);
 var proto1 = Object.getPrototypeOf(p1);
 console.log(proto1);
 console.log(Object.getPrototypeOf(proto1));
+console.log(Object.getPrototypeOf(Person));
 
 var p2 = new Person("Linda", "James", "Female");
 console.log(p2);
@@ -29,6 +30,7 @@ console.log(proto2);
 
 p1.print();
 p2.print();
+console.log( proto1.constructor );
 
 var Employee = function(firstName, lastName, gender, title) {
 	Person.call(this, firstName, lastName, gender);
@@ -51,6 +53,8 @@ e1.print();
 p1.print();
 p2.print();
 
+// COMMENT OUT THIS CODE OR YOU"LL GET UNEXPECTED RESULTS
+// EXERCISE: Can you figure out what would happen otherwise ?
 // Employee.prototype = Object.prototype;
 
 // Check the instances and the prototypes
