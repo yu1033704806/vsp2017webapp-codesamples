@@ -21,4 +21,4 @@ readStream.on("error", function() {
 		console.log("Error occurred when reading from file " + fileName);
 	} );
 
-console.log("End of program");
+console.log("End of program. Number read = " + length);

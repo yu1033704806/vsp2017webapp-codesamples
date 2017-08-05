@@ -7,12 +7,12 @@ var readStream = fs.createReadStream(fileName1);
 var writeStream = fs.createWriteStream(fileName2);
 
 readStream.on("data", function(blob) {
-			console.log("Read " + blob.length);
+			// console.log("Read " + blob.length);
 			writeStream.write(blob);
 		} );
 
 readStream.on("end", function() {
-		console.log("End of stream");
+		// console.log("End of stream");
 		writeStream.end();
 	} );
 
